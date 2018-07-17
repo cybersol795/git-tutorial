@@ -20,7 +20,7 @@ Git allows you to save your work and maintain a **visible history** of that
 work. You can even revert to previous stages of your history, and make
 multiple branches of that history for experimentation.
 
-Git is great for working in groups as well, because the history of who
+Git is great for working in groups as well because the history of who
 did what and when they did it is completely transparent.
 
 We recommend you follow [this visual guide](https://pcottle.github.io/learnGitBranching)
@@ -51,7 +51,7 @@ following in a terminal to get git:
 
     apt-get install git
 
-These distros also have graphical packaging software, but for now
+These distros also have graphical packaging software, but for now,
 let's get used to using the command line.
 
 ### Configuration
@@ -70,9 +70,9 @@ changed what and when in a project.
 ## Github
 
 Make a [Github](https://github.com) account if you haven't already.
-What Github *is* is a site to host your code (your repos). What it *allows*
+What Github *is* is a site to host your code (your repositories). What it *allows*
 is a collaborative coding environment. Users can comment on code, create
-issues (for bugs), copy repos, and merge their changes together.
+issues (for bugs), copy repositories, and merge their changes together.
 
 The CSSS uses Github to store our documents, and you can use it
 to keep all your future coding projects backed up, including
@@ -86,16 +86,16 @@ A: Github actually has a
 [student pack](https://education.github.com/pack) which gives
 you loads of free access to various web services. Notably:
 
-* Free Github Micro Account (5 Private Repos. No one else can see your code.)
+* Free Github Micro Account (5 private repositories. No one else can see your code.)
 * $100 credit for DigitalOcean (web hosting. Their cheapest server is $5/month, meaning you get 20 months to do whatever you want with a server.)
 * Free `.me` domain name for a year with Namecheap.
 
 ## Getting to Work
-### Forking this Repo
-In the top-right corner of this Github page you should see a button
+### Forking this Repository
+In the top-right corner of this Github page, you should see a button
 labeled `Fork`. Click it.
 
-You now have a perfect copy of this repo that exists on your Github
+You now have a perfect copy of this repository that exists on your Github
 account. You can do whatever you want to it.
 
 *Forking* generally means one of two things:
@@ -105,10 +105,10 @@ direction for philosophical/political reasons, or;
 2. Making a copy of a project on Github.
 
 ### Cloning your Fork
-Move back to your terminal. We're now going to clone the repo
+Move back to your terminal. We're now going to clone the repository
 you just forked.
 
-*Cloning* is the process of copying a remote repo (like on Github)
+*Cloning* is the process of copying a remote repository (like on Github)
 to your own machine to work on.
 
 Using `cd` (change directory), move to a directory using you'd like
@@ -117,7 +117,7 @@ your clone to be in, and enter the following:
     git clone https://github.com/your-github-account/csss-git.git
 
 Use `ls` and you should see the `csss-git` folder. It contains the
-contents of the repo. You can make whatever changes you want to it;
+contents of the repository. You can make whatever changes you want to it;
 nothing on Github will be affected until you make a `git push`.
 
 ### Making a change
@@ -137,7 +137,7 @@ them.
 * Leave emacs: `C-x C-c`
 
 #### Vim
-In vim you have to type `i` or `a` to enter *Insert Mode* before you
+In vim, you have to type `i` or `a` to enter *Insert Mode* before you
 can type. `i` enters *Insert Mode* before the cursor, while `a` enters after
 the cursor. `Esc` puts you back into *Normal Mode*. You need to
 be in *Normal Mode* to run the commands below:
@@ -218,7 +218,7 @@ course, but the info here is a good start. See the file `COMPLETED.md`? Add
 your name and the date to it, and commit the change.
 
 ### Push to your Fork
-The commit you made is on your local machine. By *Pushing*, we can sync your
+The commit you made is on your local machine. By *pushing*, we can sync your
 Clone and your Fork.
 
     git push origin master
@@ -227,18 +227,18 @@ Your new commit will then be on Github too.
 
 ### Make a Pull Request
 The commit is now in your Fork, but it's not in the
-original repo you copied from. By making a *Pull Request*
-from your Fork you can ask the maintainers of the original repo
+original repository you copied from. By making a *Pull Request*
+from your Fork you can ask the maintainers of the original repository
 to merge your changes into the master project.
 
 On your Fork's page on Github, there should be a Green button near
 the upper-left. Click on it, and hit *Create Pull Request* on the
-next page. This will create a new *Issue* in the main repo,
+next page. This will create a new *Issue* in the main repository,
 where everyone can comment on your commits. The maintainers
 may ask you to make further changes before they merge.
 
 ### You're Done!
-Soon the `csss-git` repo maintainers will merge your commit
+Soon the `csss-git` repository maintainers will merge your commit
 in, and you'll be remembered for having completed this tutorial.
 
 The process explained above is how modern collaborative software development
